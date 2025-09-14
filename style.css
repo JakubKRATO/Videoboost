@@ -129,4 +129,37 @@ section.hero img {
 .uspech {
     background-color: #effafa;
     min-height: 627px;
+    display: flex;
+    align-items: center;
+}
+.uspech 
+.uspech li {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+}
+.uspech .right {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/15.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    gap: 30px;
+    z-index: 1;
+}
+.uspech .ball1 {
+    width: 66px;
+    height: 66px;
+}
+.uspech .row2 {
+    display: flex;
+    justify-content: end;
+}
+.uspech .ball2 {
+    width: 36px;
+    height: 36px;
+}
+.uspech .container .right {
+    z-index: 2;
 }
