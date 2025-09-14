@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Videoboost";
+    src: url("/fonts/Videoboost.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* good practice */
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Videoboost", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* DECLARATION AREA */
+a {
+    transition: ease-out 0.3s;
+}
+p.mini {
+    text-transform: uppercase;
+    margin: 0;
+    color: #7F1CFE;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 27.2px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* NAVBAR */
+nav {
+    padding: 31px 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+}
+nav .logo {
+    height: 50px;
+}
+nav a.black {
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+a.black:hover {
+    background-color: #7F1CFE;
+}
+
+
+/* SECTION HERO */
+section.hero {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    min-height: 696px;
+    background-image: url(/img/19.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 129% auto;
+    background-color: rgba(255, 255, 255, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 277px;
+    z-index: 2;
+}
+.hero h1 {
+    font-family: inherit;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 57.2px;
+    text-align: center;
+    width: 914px;
+}
+.hero .desc {
+    color: rgb(147, 147, 147);
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 27.2px;
+    text-align: center;
+    width: 693px;
+}
+.hero a {
+    text-decoration: none;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.hero a:hover {
+    background-color: #7F1CFE;
+}
+section.hero img {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* SECTION USCPECH */
+.uspech {
+    background-color: #effafa;
+    min-height: 627px;
+}
