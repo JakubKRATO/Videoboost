@@ -1,10 +1,13 @@
+/* Load Space Grotesk SemiBold (weight 600) */
 @font-face {
-    font-family: "Videoboost";
-    src: url("/fonts/Videoboost.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* good practice */
+  font-family: 'Space Grotesk';                /* Use the official family name */
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.gstatic.com/s/spacegrotesk/v21/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2') format('woff2');
+  font-display: swap;  /* Optional: ensure text uses fallback until font loads */
 }
+
+
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -13,7 +16,23 @@ body {
     margin: 0;
     padding: 0;
 }
-
+h1,h2,h3,h4 {
+    font-family: "Space Grotesk", sans-serif;
+}
+a.black {
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
 /* DECLARATION AREA */
 a {
     transition: ease-out 0.3s;
@@ -82,13 +101,14 @@ section.hero {
     z-index: 2;
 }
 .hero h1 {
-    font-family: inherit;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 44px;
     font-weight: 600;
     letter-spacing: normal;
     line-height: 57.2px;
     text-align: center;
     width: 914px;
+    -webkit-font-smoothing: antialiased;
 }
 .hero .desc {
     color: rgb(147, 147, 147);
@@ -131,6 +151,7 @@ section.hero img {
     min-height: 627px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .uspech h2 {
     font-size: 45px;
@@ -147,16 +168,16 @@ section.hero img {
     padding: 0;
     list-style-type: none;
 }
-.uspech .right {
+.uspech .rightOne {
     display: flex;
     flex-direction: column;
     background-image: url(/img/15.png);
-    background-size: 30%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
     gap: 30px;
     z-index: 1;
-    flex-grow: 1;
+    padding: 0 120px;
 }
 .uspech .ball1 {
     width: 66px;
@@ -170,6 +191,46 @@ section.hero img {
     width: 36px;
     height: 36px;
 }
+.uspech .container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 4px 4px 30px 0px;
+    height: min-content;
+}
 .uspech .container .right {
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uspech .container .right p#counter {
+    color: #7F1CFE;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+    text-wrap-mode: wrap;
+}
+.uspech .container .right h4 {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* UKAZKY PRACE */
+.ukazky {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.ukazky .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.ukazky .container video {
+    width: 265px;
 }
