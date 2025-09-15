@@ -20,6 +20,7 @@ body {
 h1,h2,h3,h4 {
     font-family: "Space Grotesk", sans-serif;
 }
+/* DECLARATION AREA */
 a.black {
     background-color: black;
     text-transform: uppercase;
@@ -33,11 +34,9 @@ a.black {
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
-}
-/* DECLARATION AREA */
-a {
     transition: ease-out 0.3s;
 }
+
 p.mini {
     text-transform: uppercase;
     margin: 0;
@@ -159,16 +158,18 @@ section.hero img {
     font-size: 45px;
     font-weight: 600;
 }
-.uspech li {
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 23.8px;
-    margin-left: ;
-}
 .uspech ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+.uspech li {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23.8px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
 }
 .uspech .rightOne {
     display: flex;
