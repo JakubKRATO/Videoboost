@@ -154,16 +154,28 @@ section.hero img {
     align-items: center;
     justify-content: center;
 }
+.uspech .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.uspech .left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 .uspech h2 {
     font-size: 45px;
     font-weight: 600;
+    width: 500px;
 }
 .uspech ul {
-    margin: 0;
+    margin: 0 0 0 40px;
     padding: 0;
     list-style-type: none;
 }
 .uspech li {
+    width: 400px;
     font-size: 17px;
     font-weight: 500;
     line-height: 23.8px;
@@ -180,7 +192,8 @@ section.hero img {
     background-position: bottom right;
     gap: 30px;
     z-index: 1;
-    padding: 0 120px;
+    flex-grow: 2;
+    padding: 0;
 }
 .uspech .ball1 {
     width: 66px;
@@ -203,6 +216,7 @@ section.hero img {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.08) 4px 4px 30px 0px;
     height: min-content;
+    width: 270px;
 }
 .uspech .container .right {
     display: flex;
@@ -215,10 +229,13 @@ section.hero img {
     font-weight: 500;
     margin: 0;
     text-wrap-mode: wrap;
+    font-family: "Space Grotesk", sans-serif;
 }
 .uspech .container .right h4 {
     flex-grow: 1;
     flex-shrink: 1;
+    font-size: 25px;
+    margin: 0;
 }
 
 /* UKAZKY PRACE */
