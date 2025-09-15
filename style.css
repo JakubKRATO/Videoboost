@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 /* Load Space Grotesk SemiBold (weight 600) */
 /* @font-face {
   font-family: 'Space Grotesk';           
@@ -13,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Videoboost", sans-serif;
+    font-family: "DM Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -35,6 +36,7 @@ a.black {
     font-weight: 500;
     cursor: pointer;
     transition: ease-out 0.3s;
+    text-decoration: none;
 }
 
 p.mini {
@@ -149,7 +151,7 @@ section.hero img {
 /* SECTION USCPECH */
 .uspech {
     background-color: #effafa;
-    min-height: 627px;
+    padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +164,6 @@ section.hero img {
 .uspech .left {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 .uspech h2 {
     font-size: 45px;
@@ -192,8 +193,7 @@ section.hero img {
     background-position: bottom right;
     gap: 30px;
     z-index: 1;
-    flex-grow: 98;
-    padding: 0;
+    width: 500px;
 }
 .uspech .ball1 {
     width: 66px;
@@ -265,13 +265,20 @@ section.hero img {
 
 /* SECTION WORK */
 .work {
-    background-image: url(img/2.jpg);
-    width: 95%;
+    background-image: url(img/19.png);
+    background-size: cover;
+    width: 99%;
     border-radius: 10px;
     margin-inline: auto;
 }
+.work h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
 .work .wrapper {
+    padding: 80px 0;
     background-image: url(img/19.png);
+    border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -283,6 +290,7 @@ section.hero img {
 .work .container {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .work .container .box {
     display: flex;
@@ -291,8 +299,8 @@ section.hero img {
     border-radius: 10px;
     background-color: white;
     margin: 0 10px;
-    width: 278px;
-    height: 278px;
+    width: 400px;
+    height: 330px;
     border: 1px solid white;
     padding: 40px;
 }
@@ -300,8 +308,116 @@ section.hero img {
     width: 66px;
     height: 66px;
     flex-shrink: 0; /* prevent flexbox from shrinking it */
+    margin-bottom: 15px;
+}
+.work .container .box h4 {
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+.work .container .box p {
+    text-align: center;
+    color: rgb(147, 147, 147);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 27.2px;
+    letter-spacing: 1.05px;
+    transition: all 0.3s;
 }
 
 .work .container .box:hover {
+    transition: all 0.3s;
     border: 1px solid #7F1CFE;
+}
+.work a {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background-color: #7F1CFE;
+}
+.work a:hover {
+    background-color: black;
+}
+
+/* SECTION SLUZBY */
+.sluzby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sluzby h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+.sluzby .containerOne {
+    display: flex;
+    gap: 10px;
+}
+.sluzby .containerOne .box {
+    border: 0.67px solid rgba(135, 134, 134, 0.1);
+    flex-grow: 1;
+    border-radius: 25px;
+}
+.sluzby .containerOne .row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sluzby .containerOne .row:nth-child(2) .box {
+    width: 628px; /* TOTO OZES DAT AKO PREMENU S IMG 1 - (reminder) */
+}
+.sluzby .img1 {
+    width: 628px;
+}
+.sluzby .img2 {
+    width: 298px;
+}
+.sluzby .img3 {
+    height: 298px;
+}
+.sluzby .containerTwo {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+}
+.sluzby .containerTwo .stripes {
+    width: 285px;
+    border-radius: 150px;
+    transition: ease-out 0.2s;
+}
+.sluzby .containerTwo .stripes:hover {
+    transition: ease-out 0.2s;
+    transform: translateY(-10px);
+    z-index: 1;
+}
+.sluzby .ball1 {
+    width: 91px;
+    height: 91px;
+    transform: translateY(-50px);
+}
+.sluzby .ball2 {
+    width: 51px;
+    height: 51px;
+    transform: translateY(43px);
+    z-index: 2;
+}
+.sluzby .containerTwo .block {
+    width: 600px;
+}
+.sluzby .containerTwo h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+.sluzby .containerTwo p {
+    color: rgb(147, 147, 147);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 27.2px;
+    margin-block-end: 14.4px;
+}
+.sluzby .containerTwo a {
+    width: fit-content;
 }
