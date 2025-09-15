@@ -1,10 +1,13 @@
+/* Load Space Grotesk SemiBold (weight 600) */
 @font-face {
-    font-family: "Videoboost";
-    src: url("/fonts/Videoboost.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; /* good practice */
+  font-family: 'Space Grotesk';                /* Use the official family name */
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.gstatic.com/s/spacegrotesk/v21/V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2') format('woff2');
+  font-display: swap;  /* Optional: ensure text uses fallback until font loads */
 }
+
+
 *, :after, :before {
     box-sizing: border-box;
 }
@@ -12,6 +15,9 @@ body {
     font-family: "Videoboost", sans-serif;
     margin: 0;
     padding: 0;
+}
+h1,h2,h3,h4 {
+    font-family: "Space Grotesk", sans-serif;
 }
 a.black {
     background-color: black;
@@ -95,13 +101,14 @@ section.hero {
     z-index: 2;
 }
 .hero h1 {
-    font-family: inherit;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 44px;
     font-weight: 600;
     letter-spacing: normal;
     line-height: 57.2px;
     text-align: center;
     width: 914px;
+    -webkit-font-smoothing: antialiased;
 }
 .hero .desc {
     color: rgb(147, 147, 147);
@@ -164,12 +171,12 @@ section.hero img {
     display: flex;
     flex-direction: column;
     background-image: url(/img/15.png);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
     gap: 30px;
     z-index: 1;
-    padding: 0 60px;
+    padding: 0 120px;
 }
 .uspech .ball1 {
     width: 66px;
