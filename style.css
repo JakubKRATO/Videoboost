@@ -37,6 +37,7 @@ a.black {
     cursor: pointer;
     transition: ease-out 0.3s;
     text-decoration: none;
+    width: fit-content;
 }
 
 p.mini {
@@ -355,6 +356,9 @@ section.hero img {
     display: flex;
     gap: 10px;
 }
+.sluzby .containerOne p {
+    width: 628px;
+}
 .sluzby .containerOne .box {
     border: 0.67px solid rgba(135, 134, 134, 0.1);
     flex-grow: 1;
@@ -411,7 +415,8 @@ section.hero img {
     font-weight: 600;
     margin: 0;
 }
-.sluzby .containerTwo p {
+.sluzby .containerTwo p,
+.sluzby .containerOne p {
     color: rgb(147, 147, 147);
     font-weight: 400;
     font-size: 1rem;
@@ -420,4 +425,201 @@ section.hero img {
 }
 .sluzby .containerTwo a {
     width: fit-content;
+}
+
+/* SECTION PRIDAJ */
+.pridaj {
+    background-color: black;
+}
+.pridaj .wrapper {
+    background-image: url(img/6.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+}
+.pridaj .row img {
+    width: 86px;
+    height: 86px;
+}
+.pridaj .container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 60px;
+}
+.pridaj .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.pridaj h2 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 600;
+}
+.pridaj .count {
+    margin: 0;
+    font-size: 89px;
+    font-weight: 600;
+    line-height: 115px;
+}
+.pridaj h3 {
+    font-size: 43px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+.pridaj .right img {
+    width: 512px;
+    height: 341px;
+}
+.pridaj a {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    background-color: white;
+    color: black;
+    transition: all 0.3s;
+    padding: 10px 25px;
+    width: 90%;
+}
+.pridaj a:hover {
+    transition: all 0.3s;
+    color: #7F1CFE;
+    background-color: white;
+}
+
+/* SECTION RECENZE */
+.recenzie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-image: url(img/19.png);
+    width: 95vw;
+    margin-inline: auto;
+    border-radius: 10px;
+    padding: 140px 0;
+}
+.recenzie .mini {
+    margin-bottom: 15px;
+}
+.recenzie h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+.recenzie .stars {
+    color: rgb(147, 147, 147);
+}
+.recenzie .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.recenzie video {
+    max-width: 366px;
+}
+
+/* SECTION FAQ */
+.faq {
+    padding: 100px 0;
+    width: 100%;
+}
+.faq .wrapper {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.faq .left {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/10.jpg);
+    width: 600px;
+    height: 689px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+}
+.faq .left .row2 {
+    display: flex;
+    justify-content: flex-end;
+}
+.faq .left img {
+    width: 174px;
+    border-radius: 100px;
+    position: absolute;
+}
+.faq .left img.one {
+    top: 20px;
+    left: -20px;
+}
+.faq .left img.two {
+    bottom: 20px;
+    right: -20px;
+}
+.faq h2 {
+    margin: 0;
+    font-size: 43px;
+    font-weight: 600;
+}
+.faq .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faq .right a {
+    margin-top: 15px;
+}
+
+/* SECTION KONTAKT */
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.kontakt h2 {
+    font-size: 43px;
+    font-weight: 600;
+}
+.kontakt .wrapper {
+    width: 1000px;
+    height: 550px;
+    outline: 2px solid lime;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: black;
+    padding: 150px 0;
+}
+footer .wrapper {
+    display: flex;
+    gap: 50px;
+    margin-inline: auto;    
+    color: rgb(147, 147, 147);
+}
+footer .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 510px;
+}
+footer .left p {
+    line-height: 27.2px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer img {
+    width: 300px;
+    transform: translateX(-25px);
+}
+footer h3 {
+    color: white;
 }
