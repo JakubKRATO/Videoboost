@@ -583,13 +583,34 @@ section.hero img {
     color: #7F1CFE;
     background-color: white;
 }
+@media screen and (max-width: 916px) {
+    .pridaj .container {
+        flex-direction: column;
+    }
+    .pridaj .wrapper {
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 668px) {
+    .pridaj .wrapper {
+        width: 100%;
+    }
+    .pridaj .container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 668px) {
+    .pridaj .right img {
+        width: 99vw;
+        height: auto;
+    }
+}
 
 /* SECTION RECENZE */
 .recenzie {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
     background-image: url(img/19.png);
     width: 95vw;
     margin-inline: auto;
@@ -611,9 +632,18 @@ section.hero img {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .recenzie video {
     max-width: 366px;
+}
+@media screen and (max-width: 1400px) {
+    .recenzie video {
+        max-width: 20vw;
+    }
+    .recenzie {
+        padding: 50px 0;
+    }
 }
 
 /* SECTION FAQ */
