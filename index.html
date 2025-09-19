@@ -51,10 +51,14 @@
     <section class="ukazky">
         <p class="mini">Ukázka naší tvorby</p>
         <div class="container">
-            <video src="videa/ukazky/2.mp4" controls ></video>
-            <video src="videa/ukazky/3.mp4" controls ></video>
-            <video src="videa/ukazky/4.mp4" controls ></video>
-            <video src="videa/ukazky/5.mp4" controls ></video>
+            <div class="row">
+                <video src="videa/ukazky/2.mp4" controls ></video>
+                <video src="videa/ukazky/3.mp4" controls ></video>
+            </div>
+            <div class="row">
+                <video src="videa/ukazky/4.mp4" controls ></video>
+                <video src="videa/ukazky/5.mp4" controls ></video>
+            </div>
         </div>
         <a class="black">Zjistěte jak dokážeme pomoci i vám</a>
     </section>
@@ -186,5 +190,10 @@
         </div>
     </footer>
     <script src="js.js"></script>
+    <script>
+            setInterval(() => {
+                console.log(window.innerWidth);
+            }, 500)
+    </script>
 </body>
 </html>

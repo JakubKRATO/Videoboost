@@ -38,9 +38,11 @@ a.black {
     transition: ease-out 0.3s;
     text-decoration: none;
     width: fit-content;
+    text-align: center;
 }
 
 p.mini {
+    text-align: center;
     text-transform: uppercase;
     margin: 0;
     color: #7F1CFE;
@@ -49,6 +51,12 @@ p.mini {
     letter-spacing: 5px;
     line-height: 27.2px;
     -webkit-font-smoothing: antialiased;
+}
+@media screen and (max-width: 681px) {
+    p.mini {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
 }
 
 /* NAVBAR */
@@ -89,7 +97,7 @@ section.hero {
     background-image: url(/img/19.png);
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 129% auto;
+    background-size: cover;
     background-color: rgba(255, 255, 255, 0.24);
     display: flex;
     justify-content: center;
@@ -149,6 +157,34 @@ section.hero img {
     z-index: 1;
 }
 
+@media screen and (max-width: 1461px) {
+    section.hero img {
+        height: 35vw;
+        min-height: 200px;
+    }
+    .hero main {
+        max-width: 99vw;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 912px) {
+    .hero h1 {
+        width: 95vw;
+    }
+    section.hero {
+        min-height: fit-content;
+        padding: 80px  0 150px 0;
+    }
+}
+@media screen and (max-width: 726px) {
+    .hero .desc {
+        width: 95vw;
+    }
+    .hero h1 {
+        font-size: 24px;
+        line-height: 31.2px;
+    }
+}
 /* SECTION USCPECH */
 .uspech {
     background-color: #effafa;
@@ -178,7 +214,7 @@ section.hero img {
 }
 .uspech li {
     width: 400px;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 23.8px;
     margin-bottom: 25px;
@@ -240,7 +276,36 @@ section.hero img {
     font-size: 25px;
     margin: 0;
 }
-
+@media screen and (max-width: 1028px) {
+    .uspech h2 {
+        font-size: 23px;
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .uspech li {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+    .uspech .wrapper {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .uspech .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+    .uspech .rightOne {
+        width: 85vw;
+    }
+}
+@media screen and (max-width: 536px) {
+    .uspech ul li {
+        width: 70vw;
+    }
+}
 /* UKAZKY PRACE */
 .ukazky {
     padding: 100px 0;
@@ -253,6 +318,11 @@ section.hero img {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+}
+.ukazky .container .row {
+    display: flex;
+    gap: 20px;
 }
 .ukazky .container video {
     width: 265px;
@@ -262,6 +332,17 @@ section.hero img {
 }
 .ukazky a:hover {
     background-color: black;
+}
+@media screen and (max-width: 609px) {
+    .ukazky .container {
+        gap: 5px;
+    }
+    .ukazky .container .row {
+        gap: 5px;
+    }   
+    .ukazky .container video {
+        width: 45vw;
+    }
 }
 
 /* SECTION WORK */
@@ -292,6 +373,8 @@ section.hero img {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .work .container .box {
     display: flex;
@@ -299,7 +382,6 @@ section.hero img {
     align-items: center;
     border-radius: 10px;
     background-color: white;
-    margin: 0 10px;
     width: 400px;
     height: 330px;
     border: 1px solid white;
@@ -340,6 +422,17 @@ section.hero img {
 }
 .work a:hover {
     background-color: black;
+}
+@media screen and (max-width: 675px) {
+    .work h2 {
+        font-size: 33px;
+    }
+}
+@media screen and (max-width: 446px) {
+    .work .container .box {
+        width: 90vw;
+        height: 330px;
+    }
 }
 
 /* SECTION SLUZBY */
