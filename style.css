@@ -791,10 +791,83 @@ section.hero img {
     flex-direction: column;
     justify-content: center;
 }
+.faq ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.faq li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #b882ff3f;
+    border-radius: 999px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: fit-content;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.faq p {
+    width: 400px;
+    color: rgb(147, 147, 147);
+    margin-left: 15px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}
+.faq h4 {
+    margin: 15px 0;
+}
 .faq .right a {
     margin-top: 15px;
 }
-
+@media screen and (max-width: 1614px) {
+    .faq .wrapper {
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 1452px) {
+    .faq .left {
+        width: 35vw;
+        height: 40vw;
+    }
+}
+@media screen and (max-width: 1296px) {
+    .faq .left {
+        width: 80vw;
+        height: 80vw;
+    }
+    .faq .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 810px) {
+    .faq h2 {
+        font-size: 33px;
+    }
+    .faq .left {
+        height: 100vw;
+    }
+    .faq .left img {
+        width: 120px;
+    }
+    .faq li {
+        gap: 15px;
+        font-size: 1rem;
+        max-width: 95vw;
+        margin-left: 10px;
+    }
+    .faq p {
+        transform: translateX(20px);
+        font-size: 0.8rem;
+        width: 80vw;
+        margin-left: 20px;
+    }
+}
 /* SECTION KONTAKT */
 .kontakt {
     display: flex;
@@ -869,4 +942,9 @@ footer h3 {
         flex-direction: column;
         gap: 10px;
     }
+}
+
+
+.hide {
+    display: none !important;
 }
