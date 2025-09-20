@@ -77,7 +77,17 @@ nav a.black {
 a.black:hover {
     background-color: #7F1CFE;
 }
-
+@media screen and (max-width: 500px) {
+    nav .logo {
+        height: 30px;
+    }    
+    nav {
+        align-items: center;
+    }
+    nav a.black {
+        padding: 10px 28px;
+    }
+}
 
 /* SECTION HERO */
 section.hero {
@@ -448,13 +458,17 @@ section.hero img {
     flex-grow: 1;
     border-radius: 25px;
 }
+.sluzby .containerOne .row.second .box {
+    display: flex;
+    gap: 40px;
+}
 .sluzby .containerOne .row {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 .sluzby .containerOne .row:nth-child(2) .box {
-    width: 628px; /* TOTO OZES DAT AKO PREMENU S IMG 1 - (reminder) */
+    width: 628px;
 }
 .sluzby .img1 {
     width: 628px;
@@ -509,6 +523,85 @@ section.hero img {
 }
 .sluzby .containerTwo a {
     width: fit-content;
+}
+.sluzby .containerTwo .align {
+    display: flex;
+    gap: 40px;
+}
+@media screen and (max-width: 1300px) {
+    .sluzby .containerOne .row.second {
+        width: 100%;
+    }
+    .sluzby .containerOne .box {
+        padding: 20px;
+        width: 90vw !important;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .sluzby .containerOne {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 1154px) {
+    .sluzby .img1 {
+        width: 288px;
+        height: 196px;
+    }
+}
+@media screen and (max-width: 736px) {
+    .sluzby .containerOne .box {
+        padding: 20px;
+        width: 95vw !important;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sluzby .containerOne .box p {
+        width: 90vw;
+        margin-left: 15px;
+    }
+}
+
+/* CONTAINER TWO */
+@media screen and (max-width: 1300px) {
+    .sluzby .containerTwo {
+        padding: 20px;
+        width: 95vw !important;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .sluzby .containerTwo .stripes {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 652px) {
+    .sluzby .containerTwo .block {
+        width: 95vw;
+    }
+}
+@media screen and (max-width: 522px) {
+    .sluzby .containerTwo .stripes {
+        width: 30vw;
+    }
+    .sluzby .ball1 {
+        width: 75px;
+        height: 75px;
+    }
+    .sluzby .ball2 {
+        width: 38px;
+        height: 38px;
+    }
+    .sluzby .containerTwo .block h3 {
+        font-size: 33px;
+    }
+    .sluzby h2 {
+        font-size: 33px;
+    }
 }
 
 /* SECTION PRIDAJ */
@@ -574,13 +667,34 @@ section.hero img {
     color: #7F1CFE;
     background-color: white;
 }
+@media screen and (max-width: 916px) {
+    .pridaj .container {
+        flex-direction: column;
+    }
+    .pridaj .wrapper {
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 668px) {
+    .pridaj .wrapper {
+        width: 100%;
+    }
+    .pridaj .container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 668px) {
+    .pridaj .right img {
+        width: 99vw;
+        height: auto;
+    }
+}
 
 /* SECTION RECENZE */
 .recenzie {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
     background-image: url(img/19.png);
     width: 95vw;
     margin-inline: auto;
@@ -602,11 +716,32 @@ section.hero img {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .recenzie video {
     max-width: 366px;
 }
-
+@media screen and (max-width: 1600px) {
+    .recenzie video {
+        max-width: 20vw;
+    }
+    .recenzie {
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 900px) {
+    .recenzie video {
+        max-width: 42vw;
+    }
+    .recenzie .container {
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 675px) {
+    .recenzie h2 {
+        font-size: 33px;
+    }
+}
 /* SECTION FAQ */
 .faq {
     padding: 100px 0;
@@ -676,7 +811,14 @@ section.hero img {
     height: 550px;
     outline: 2px solid lime;
 }
-
+.calendly-inline-widget {
+    width: 700px;
+}
+@media screen and (max-width: 750px) {
+    .calendly-inline-widget {
+        width: 80vw;
+    }   
+}
 /* FOOTER */
 footer {
     display: flex;
@@ -706,4 +848,25 @@ footer img {
 }
 footer h3 {
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+    footer .left {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 680px) {
+    footer .left {
+        width: 300px;
+    }
+    footer img {
+        width: 200px;
+        transform: translateX(-5px);
+    }
+}
+@media screen and (max-width: 544px) {
+    footer .wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
