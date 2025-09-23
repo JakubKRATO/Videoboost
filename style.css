@@ -401,7 +401,8 @@ section.hero img {
     border: 1px solid white;
     padding: 40px;
 }
-.work .container .box svg {
+.work .container .box svg,
+.work .container .box img {
     width: 66px;
     height: 66px;
     flex-shrink: 0; /* prevent flexbox from shrinking it */
