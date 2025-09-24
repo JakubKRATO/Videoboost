@@ -465,7 +465,9 @@ section.hero img {
     gap: 10px;
 }
 .sluzby .containerOne p {
-    width: 628px;
+    width: 620px;
+    margin: 15px;
+
 }
 .sluzby .containerOne .box {
     border: 0.67px solid rgba(135, 134, 134, 0.1);
@@ -699,7 +701,7 @@ section.hero img {
 }
 @media screen and (max-width: 668px) {
     .pridaj .right img {
-        width: 99vw;
+        max-width: 96vw;
         height: auto;
     }
 }
