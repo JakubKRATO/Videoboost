@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded",() => {
         entries.forEach(entry => {
             if (entry.isIntersecting && entry.target.classList.contains("preparing")) {
 
+                if (entry.target.classList.contains("stay50")) {
+                    entry.target.classList.replace("preparing","animate50")
+                    observer.unobserve(entry.target)
+                }
                 entry.target.classList.replace("preparing","animate")
                 observer.unobserve(entry.target)
                 

@@ -11,6 +11,16 @@
         opacity: 1;
     }
 }
+@keyframes moveUp50 {
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+    }    
+    to {
+        transform: translateY(50);
+        opacity: 1;
+    }
+}
 
 
 
@@ -199,6 +209,12 @@ section.hero img {
         line-height: 31.2px;
     }
 }
+@media screen and (max-width: 450px) {
+    .hero .desc {
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
 /* SECTION USCPECH */
 .uspech {
     background-color: #effafa;
@@ -324,7 +340,8 @@ section.hero img {
         transform: translateX(-20px);
     }
     .uspech .container {
-        width: 200px;
+        padding: 25px 0px;
+        transform: translateY(50px);
     }
 }
 /* UKAZKY PRACE */
@@ -986,4 +1003,7 @@ footer h3 {
 }
 .animate {
     animation: moveUp 0.8s ease-in-out;
+}
+.animate50 {
+    animation: moveUp50 0.8s ease-in-out;
 }
