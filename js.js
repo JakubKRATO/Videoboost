@@ -8,12 +8,6 @@ var main = async () => {
         counterDisplay.innerHTML = i + "%"
     }
 };
-main()
-
-setInterval(() => {
-    console.log(window.innerWidth);
-    
-}, 500)
 $(document).ready(function () {
     $(".faq p").hide();
 
@@ -21,5 +15,15 @@ $(document).ready(function () {
         $(this).next("p").slideToggle(300);
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                main()
+                observer.unobserve(entry.target)
+            }
+        });
+    }, {threshold: 0.1});
 
-alert(window.innerWidth)
+    observer.observe(counterDisplay)
+});

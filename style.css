@@ -319,6 +319,13 @@ section.hero img {
     .uspech ul li {
         width: 70vw;
     }
+    .uspech .rightOne {
+        max-width: 95vw;
+        transform: translateX(-20px);
+    }
+    .uspech .container {
+        width: 200px;
+    }
 }
 /* UKAZKY PRACE */
 .ukazky {
@@ -458,7 +465,7 @@ section.hero img {
         transition: all 0.3s;
     }
     a.black {
-        scale: 0.8;
+        scale: 0.9;
     }
 }
 
@@ -711,7 +718,7 @@ section.hero img {
 }
 @media screen and (max-width: 668px) {
     .pridaj .right img {
-        width: 99vw;
+        width: 95vw;
         height: auto;
     }
 }
