@@ -21,3 +21,5 @@ $(document).ready(function () {
         $(this).next("p").slideToggle(300);
     });
 });
+
+alert(window.innerWidth)

@@ -448,6 +448,18 @@ section.hero img {
         width: 90vw;
         height: 330px;
     }
+    .work .container .box p {
+        text-align: center;
+        color: rgb(147, 147, 147);
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20.2px;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+    }
+    a.black {
+        scale: 0.8;
+    }
 }
 
 /* SECTION SLUZBY */
