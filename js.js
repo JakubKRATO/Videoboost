@@ -9,7 +9,11 @@ var main = async () => {
         counterDisplay.innerHTML = i + "%"
     }
 };
+var pomoc = true
 var main2 = async () => {
+    if (!pomoc) return
+
+    pomoc = false
     for (let i = 0; i < 49; i++) {
         await sleep(40)
         counter2.innerHTML = i + "+"
@@ -27,10 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting && entry.target.classList.contains("points")) {
                 main()
-                observer.unobserve(entry.target)
-            } else if (entry.isIntersecting && entry.target.classList.contains("points2")) {
-                main2()
-                entry.target.classList.remove("points2")
                 observer.unobserve(entry.target)
             }
         });
