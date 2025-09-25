@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 observer.unobserve(entry.target)
             } else if (entry.isIntersecting && entry.target.classList.contains("points2")) {
                 main2()
+                entry.target.classList.remove("points2")
                 observer.unobserve(entry.target)
             }
         });
