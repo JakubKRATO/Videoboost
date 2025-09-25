@@ -27,11 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting && entry.target.classList.contains("points")) {
                 main()
-                observer.unobserve(entry.target)
             } else if (entry.isIntersecting) {
                 main2()
-                observer.unobserve(entry.target)
             }
+            observer.unobserve(entry.target)
         });
     }, {threshold: 0.1});
 
