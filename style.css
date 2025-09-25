@@ -11,6 +11,16 @@
         opacity: 1;
     }
 }
+@keyframes moveUp50 {
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+    }    
+    to {
+        transform: translateY(50);
+        opacity: 1;
+    }
+}
 
 
 
@@ -199,6 +209,12 @@ section.hero img {
         line-height: 31.2px;
     }
 }
+@media screen and (max-width: 450px) {
+    .hero .desc {
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+}
 /* SECTION USCPECH */
 .uspech {
     background-color: #effafa;
@@ -318,6 +334,14 @@ section.hero img {
 @media screen and (max-width: 536px) {
     .uspech ul li {
         width: 70vw;
+    }
+    .uspech .rightOne {
+        max-width: 95vw;
+        transform: translateX(-20px);
+    }
+    .uspech .container {
+        padding: 25px 0px;
+        transform: translateY(50px);
     }
 }
 /* UKAZKY PRACE */
@@ -447,6 +471,18 @@ section.hero img {
     .work .container .box {
         width: 90vw;
         height: 330px;
+    }
+    .work .container .box p {
+        text-align: center;
+        color: rgb(147, 147, 147);
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20.2px;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+    }
+    a.black {
+        scale: 0.9;
     }
 }
 
@@ -701,7 +737,11 @@ section.hero img {
 }
 @media screen and (max-width: 668px) {
     .pridaj .right img {
+<<<<<<< HEAD
         max-width: 96vw;
+=======
+        width: 95vw;
+>>>>>>> 8ae5f827c26a5b76304bfcdafa51c7a546a5e4b6
         height: auto;
     }
 }
@@ -969,4 +1009,7 @@ footer h3 {
 }
 .animate {
     animation: moveUp 0.8s ease-in-out;
+}
+.animate50 {
+    animation: moveUp50 0.8s ease-in-out;
 }
