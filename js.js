@@ -35,7 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }, {threshold: 0.1});
+    const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && entry.target.classList.contains("points2")) {
+                main2()
+                observer.unobserve(entry.target)
+            }
+        });
+    }, {threshold: 0.1});
 
     observer.observe(counterDisplay)
-    observer.observe(counter2)
+    observer2.observe(counter2)
 });
