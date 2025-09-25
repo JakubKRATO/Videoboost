@@ -737,11 +737,7 @@ section.hero img {
 }
 @media screen and (max-width: 668px) {
     .pridaj .right img {
-<<<<<<< HEAD
         max-width: 96vw;
-=======
-        width: 95vw;
->>>>>>> 8ae5f827c26a5b76304bfcdafa51c7a546a5e4b6
         height: auto;
     }
 }
